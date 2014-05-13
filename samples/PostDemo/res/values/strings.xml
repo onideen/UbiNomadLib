@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="facebook_app_id">YOUR_FACEBOOK_APP_ID</string>
+    
+    <string name="app_name">UbiPost</string>
+	<string name="settings">Settings</string>
+    <string name="main">Main</string>
+    
+    <string name="checkin">Checkin</string>
+    <string name="postButton">Post to social networks</string>
+    <string name="statusUpdate">Status update</string>
+    <string name="checkInPlace">Your location is unknown</string>
+    
+	
+</resources>

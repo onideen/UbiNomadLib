@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    style="@style/form" >
+
+    <TextView
+        android:id="@+id/edit_place_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_place"
+        style="?android:attr/listSeparatorTextViewStyle"/>
+    
+    <EditText
+        android:id="@+id/place_name"
+        android:hint="@string/placeName"
+        style="@style/editText" >
+        <requestFocus />
+    </EditText>
+
+       <TextView
+        android:id="@+id/seciton_header_position"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/section_header_position"
+        style="?android:attr/listSeparatorTextViewStyle"/>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/latitude"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+        	android:hint="@string/latitude"
+        	style="@style/editText" />
+
+        <EditText
+            android:id="@+id/longitude"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+        	android:hint="@string/longitude" 
+        	style="@style/editText" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/getCoordinates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/getCoordinates" />
+    
+    <TextView
+        android:id="@+id/seciton_header_type"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/section_header_type"
+        style="?android:attr/listSeparatorTextViewStyle"/>
+	
+	<Spinner
+        android:id="@+id/typeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/google_types"
+        android:prompt="@string/type_prompt" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save" />
+
+</LinearLayout>

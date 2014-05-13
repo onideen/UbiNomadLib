@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <fragment android:name="no.ntnu.ubinomad.manager.NearPlacesFragment"
+          android:id="@+id/selectionFragment"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+    <fragment android:name="no.ntnu.ubinomad.lib.fragments.LoginFragment"
+          android:id="@+id/splashFragment"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+	<fragment android:name="no.ntnu.ubinomad.manager.MapPlacesFragment"
+          android:id="@+id/mapPlacesFragment"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+      <fragment android:name="no.ntnu.ubinomad.manager.AllPlacesFragment"
+          android:id="@+id/allPlacesFragment"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />    
+</LinearLayout>

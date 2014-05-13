@@ -1,0 +1,31 @@
+<resources>
+    
+ 	<string name="FOURSQUARE_CLIENT_ID">YOUR_CLIENT_ID</string>
+    <string name="FOURSQUARE_CLIENT_SECRET">YOUR_CLIENT_SECRET</string>
+	<string name="FACEBOOK_APP_ID">YOUR_APP_ID</string>
+
+	<string name="app_name">UbiNomadManager</string>
+	<string name="action_settings">settings</string>
+	<string name="get_started">To get startet click the button</string>
+	<string name="settings">Settings</string>
+	<string name="my_places">My places</string>
+	<string name="name">Name</string>
+	<string name="cancel">Cancel</string>
+	<string name="add_map">Add To New Place</string>
+	<string name="add_all">Create As New Place</string>
+	<string name="sync_places">Sync Places</string>
+	
+    <string name="places">Places</string>
+    <string name="my_places_title">My Places</string>
+    <string name="create_new_place_button">Create New Place</string>
+    <string name="edit_place">Place Details</string>
+    <string name="placeName">Name of Place</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="getCoordinates">Find coordinates</string>
+    <string name="save">Save</string>
+    <string name="section_header_position">Position</string>
+    <string name="section_header_type">Place type</string>
+    
+	
+</resources>

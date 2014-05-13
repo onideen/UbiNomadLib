@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_title"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RelativeLayout
+        android:id="@+id/facebook_button_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal" >
+
+        <com.facebook.widget.LoginButton
+            android:id="@+id/facebook_auth_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/google_sign_in_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" >
+
+        </com.google.android.gms.common.SignInButton>
+
+        <Button
+            android:id="@+id/google_sign_out_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/sign_out_button_name" />
+		
+		
+		<TextView
+	        android:id="@+id/foursquare_connected"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:paddingLeft="32dp"
+	        android:paddingRight="32dp"
+	        android:text="@string/connected_to_foursquare"
+	        android:textColor="#222"
+	        android:textSize="22sp" />
+	        
+		<Button
+	        android:id="@+id/foursquare_login_btn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="48dp"
+	        android:background="@drawable/connect_to_foursquare_blue" />
+	   
+</LinearLayout>

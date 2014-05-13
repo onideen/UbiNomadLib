@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" 
+    style="@style/form">
+
+    <TextView 
+        android:id="@+id/statusUpdate"
+        android:text="@string/statusUpdate"
+		android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_marginBottom="3dp"/> 
+        
+         
+    <EditText
+        android:id="@+id/postContent"
+        android:layout_width="match_parent"
+        android:hint="@string/statusUpdate"
+        android:lines="5"
+        android:layout_height="wrap_content"
+        android:gravity="top" >
+
+        <requestFocus />
+    </EditText>
+    
+    <TextView
+        android:id="@+id/checkInPlace"
+        android:text="@string/checkInPlace"
+		android:layout_width="fill_parent"
+		android:textStyle="bold"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="5dp"
+		android:layout_marginBottom="8dp"/>
+        
+    <Button
+        android:id="@+id/postButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/postButton" />
+      
+</LinearLayout>
