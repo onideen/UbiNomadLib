@@ -9,7 +9,7 @@ Middelware for location sharing on social networks
 [Work in progress]
 
 
-## Impleent in your application
+## Implement in your application
 
 [Work in progress]
 
