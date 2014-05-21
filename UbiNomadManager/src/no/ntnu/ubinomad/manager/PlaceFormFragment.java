@@ -1,6 +1,6 @@
 package no.ntnu.ubinomad.manager;
 
-import no.ntnu.ubinomad.lib.externdata.UbiNomadData;
+import no.ntnu.ubinomad.lib.externalproviders.UbiNomadProvider;
 import no.ntnu.ubinomad.lib.models.AbstractRawPlace;
 import no.ntnu.ubinomad.lib.models.UbiLocation;
 import no.ntnu.ubinomad.lib.models.UbiPlace;
@@ -90,7 +90,7 @@ public class PlaceFormFragment extends Fragment{
 		AbstractRawPlace providerPlace = new UbiPlace(getActivity(), placeName, location);
 		providerPlace.save();
 		
-		UbiNomadData.addPlace(providerPlace, type);
+		UbiNomadProvider.addPlace(providerPlace, type);
 		myPlacesActivity.addToList(providerPlace);
 		myPlacesActivity.showPlaces();
 	}

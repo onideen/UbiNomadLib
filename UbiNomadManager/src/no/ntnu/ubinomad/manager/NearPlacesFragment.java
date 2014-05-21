@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.List;
 
 import no.ntnu.ubinomad.lib.components.PlacePickerListAdapter;
-import no.ntnu.ubinomad.lib.externdata.NearPlaces;
+import no.ntnu.ubinomad.lib.externalproviders.NearPlaces;
 import no.ntnu.ubinomad.lib.interfaces.Place;
 import no.ntnu.ubinomad.lib.interfaces.RawPlace;
 import no.ntnu.ubinomad.lib.models.GenericRawPlace;

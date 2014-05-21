@@ -1,6 +1,5 @@
 package no.ntnu.ubinomad.manager;
 
-import no.ntnu.ubinomad.lib.externdata.UbiNomadData;
 import no.ntnu.ubinomad.lib.models.AbstractRawPlace;
 import android.app.ActionBar;
 import android.os.Bundle;

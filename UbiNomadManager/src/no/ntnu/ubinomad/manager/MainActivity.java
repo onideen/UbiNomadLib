@@ -5,8 +5,6 @@ import java.util.List;
 import no.ntnu.ubinomad.lib.Provider;
 import no.ntnu.ubinomad.lib.activities.UbiNomadFragmentActivity;
 import no.ntnu.ubinomad.lib.externalproviders.*;
-import no.ntnu.ubinomad.lib.externdata.ProviderRegister;
-import no.ntnu.ubinomad.lib.externdata.SyncData;
 import no.ntnu.ubinomad.lib.fragments.LoginFragment;
 import no.ntnu.ubinomad.lib.interfaces.AggregatorPlace;
 import no.ntnu.ubinomad.lib.interfaces.Place;

@@ -5,7 +5,7 @@ import java.util.List;
 
 import no.ntnu.ubinomad.lib.Provider;
 import no.ntnu.ubinomad.lib.components.PlacePickerListAdapter;
-import no.ntnu.ubinomad.lib.externdata.UbiNomadData;
+import no.ntnu.ubinomad.lib.externalproviders.UbiNomadProvider;
 import no.ntnu.ubinomad.lib.interfaces.RawPlace;
 import no.ntnu.ubinomad.lib.models.AbstractBaseModel;
 import no.ntnu.ubinomad.lib.models.GenericRawPlace;
@@ -114,7 +114,7 @@ public class MyPlacesFragment extends Fragment{
 	        	  
 	        	  Log.i(TAG, info.position + "");
 	        	  RawPlace place = myPlacesList.get(info.position);
-	        	  UbiNomadData.delete(place);
+	        	  UbiNomadProvider.delete(place);
 	        	  ((AbstractBaseModel<RawPlace>)place).setContext(getActivity());
 	        	  
 	        	  myPlacesList.remove(info.position);
