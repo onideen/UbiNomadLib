@@ -14,6 +14,7 @@
 	<string name="add_map">Add To New Place</string>
 	<string name="add_all">Create As New Place</string>
 	<string name="sync_places">Sync Places</string>
+	<string name="current_place">Current check-in</string>
 	
     <string name="places">Places</string>
     <string name="my_places_title">My Places</string>

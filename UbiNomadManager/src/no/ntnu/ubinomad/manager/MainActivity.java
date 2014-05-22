@@ -44,6 +44,7 @@ public class MainActivity extends UbiNomadFragmentActivity {
 	private MenuItem settings;
 	private MenuItem places;
 	private MenuItem sync;
+	private MenuItem currentPlace;
 
 	private User me;
 
@@ -136,14 +137,20 @@ public class MainActivity extends UbiNomadFragmentActivity {
 		// only add the menu when the selection fragment is showing
 		if (menu.size() == 0) {
 			sync = menu.add(R.string.sync_places);
+			currentPlace = menu.add(R.string.current_place);
 		}
 		return true;
 	}
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
+		User user = User.getMe(this);
+		
 		if (item.equals(sync)){
 			new SyncData().syncPlaces(this);
+		}
+		else if (item.equals(currentPlace)) {
+			Toast.makeText(this, "I checked in at " + user.getCheckin().getName(), Toast.LENGTH_LONG).show();
 		}
 		
 		return false;
