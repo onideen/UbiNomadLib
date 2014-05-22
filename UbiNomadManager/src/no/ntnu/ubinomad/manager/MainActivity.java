@@ -150,7 +150,11 @@ public class MainActivity extends UbiNomadFragmentActivity {
 			new SyncData().syncPlaces(this);
 		}
 		else if (item.equals(currentPlace)) {
-			Toast.makeText(this, "I checked in at " + user.getCheckin().getName(), Toast.LENGTH_LONG).show();
+			if (user.getCheckin() != null) {
+				Toast.makeText(this, "I checked in at " + user.getCheckin().getName(), Toast.LENGTH_LONG).show();
+			} else{
+			Toast.makeText(this, "You are currently not checked-in at a place", Toast.LENGTH_LONG).show();
+			}	
 		}
 		
 		return false;
