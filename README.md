@@ -12,22 +12,15 @@ This section will present a short tutorial on how to make Eclipse ready for UbiN
 
 1. Import an existing Android application
 2. Select root directory
-	- For Google Play services:  *android-sdk*/extras/google/google_play_services/libproject/google-play-services_lib
-	- For other dependencies: *UbiNomadLib*
+	- Google Play services:  *[android-sdk]*/extras/google/google_play_services/libproject/google-play-services_lib
+	- Other dependencies: *[UbiNomadLib]*
 
-3. Check google-play-services_lib
-3. Check UbiNomadLib, Facebook SDK and foursquare-oath-library
+3. Select projects to import Check 
+	- Google Play services:  google-play-services_lib
+	- Other dependencies: UbiNomadLib, Facebook SDK, and foursquare-oauth-library 
 
 4. Uncheck "Copy project into workspace"
-5. Congratulation the ide is ready
-
-
-#### Other Place Provider SDKs
-
-1. Import an existing Android application
-2. Root directory
-
-[Work in progress]
+5. Congratulation the IDE is ready
 
 
 ## Implement in your application
