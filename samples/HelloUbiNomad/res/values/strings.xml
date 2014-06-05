@@ -1,0 +1,13 @@
+<resources>
+
+	<!-- FILL WITH APP ID FROM developers.facebook.com -->
+    <string name="facebook_app_id">YOUR_FACEBOOK_APP_ID</string>
+    <string name="app_name">YOUR_APP_NAME</string>
+    
+    <string name="helloUbiNomad">Hello UbiNomad</string>
+
+   	<string name="settings">Settings</string>
+    <string name="main">Main</string>
+    
+    
+</resources>
