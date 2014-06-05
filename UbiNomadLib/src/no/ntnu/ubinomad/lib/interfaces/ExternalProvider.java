@@ -5,6 +5,10 @@ import android.app.Activity;
 import android.location.Location;
 
 /**
+ * 
+ * An External Provider includes methods for the functionality the 
+ * library supports. 
+ * 
  * @author Vegar Engen <vegaen@vegaen.no>
  *
  */
@@ -12,7 +16,21 @@ public interface ExternalProvider {
 
 	static final String TAG = "ExternalProvider";
 	
+	/**
+	 * This method needs to run a separate thread doing network calls
+	 * 
+	 * @param location
+	 * @param radius
+	 * @param dataListener
+	 */
 	public void getNearPlaces(Location location, int radius, ExternalDataListener dataListener);
+	
+	/**
+	 * This method will be called inside a thread
+	 * 
+	 * @param id
+	 * @return RawPlace
+	 */
 	public RawPlace getPlaceFromReference(String id);
 	public ProviderConnector getConnector();
 	

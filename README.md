@@ -1,7 +1,7 @@
 UbiNomad Library
 ================
 
-Middelware for location sharing on social networks
+Middelware for location-based applications with social network integration
 
 
 
@@ -39,7 +39,7 @@ If *UbiNomadLib* has a red x, it may be a build problem:
 
 ## Implement in your application
 
-To have nice setup for a UbiNomad application, this section will go through the steps to set it up.  
+To have clean setup for a UbiNomad application, this section will go through the steps to set it up.  
 
 1. Import an existing Android application
 2. Select root directory: *UbiNomadLib*/samples
@@ -52,11 +52,25 @@ To have nice setup for a UbiNomad application, this section will go through the 
 9. You should now be able to run the application.
 10. (Optional) Change package name to your liking. If you change the package name, you will need to change it to the same in AndroidManifest.
 
+11. (Optional) To be able to use Facebook, create an application on developers.facebook.com. Add the application id to *res/values/strings.xml*. Follow Facebooks getting started guide to be able to get key hashes
+
+12. (Optional) To be able to use Foursquare, create an application on developers.foursquare.com. Add client_id and client_secret to the constructor when register an oauth key.
 
 
 ## Extend the library
+There are two ways in which you are able to extend the library: You may add additional place providers, or you may add functionality. This section will describe how to start.
+
+### Additional Place Provider
+
+1. Extend *ExternalProvider*
+2. Implement each method the provider supports. If it does not support a function return null
+3. Extend *ProviderConnector*
+4. Implement the methods in the extended ProviderConnector
 
 
+### Add Functionality
+1. Create a new method in the *ExternalProvider* interface
+2. Implement the method in each existing Place Provider
 
 
 
