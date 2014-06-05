@@ -29,6 +29,14 @@ This section will present a short tutorial on how to make Eclipse ready for UbiN
 5. Press finish
 5. Congratulation the IDE is ready
 
+#### Errors
+If *UbiNomadLib* has a red exclamation mark, it may be a build problem:
+1. Right-click on the project and press *Properties* 
+2. Go to *Android* tab
+3. If any library is marked with a red cross, remove it and add it again.
+4. There should be 3 libraries included marked with a green v
+
+
 ## Implement in your application
 
 [Work in progress]
