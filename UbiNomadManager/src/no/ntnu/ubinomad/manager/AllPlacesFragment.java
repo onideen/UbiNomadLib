@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import no.ntnu.ubinomad.lib.components.PlacePickerListAdapter;
+import no.ntnu.ubinomad.lib.helpers.PlaceHelper;
 import no.ntnu.ubinomad.lib.interfaces.AggregatorPlace;
 import no.ntnu.ubinomad.lib.interfaces.Place;
 import no.ntnu.ubinomad.lib.interfaces.RawPlace;
@@ -71,12 +72,9 @@ public class AllPlacesFragment extends Fragment{
 				// TODO add to providerPlaces List
 				
 				AggregatorPlace aggregatorPlace = (AggregatorPlace) allPlacesView.getItemAtPosition(position);
-				
 				RawPlace rawPlace = (RawPlace)((MainActivity)getActivity()).getLastClickedPlace();
-				rawPlace.setAggregatorPlace(aggregatorPlace);
-				
-				((AbstractBaseModel<RawPlace>)rawPlace).setContext(getActivity());
-				((AbstractBaseModel<RawPlace>)rawPlace).save();
+								
+				PlaceHelper.mapPlaceToAggregatorPlace(getActivity(), rawPlace, aggregatorPlace);
 				
 				
 				((MainActivity)getActivity()).checkIn(aggregatorPlace);

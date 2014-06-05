@@ -129,7 +129,7 @@ public class FourSquareProvider implements ExternalProvider {
 	}
 
 	@Override
-	public RawPlace getFromId(final String id) {
+	public RawPlace getPlaceFromReference(final String id) {
 
 		if (FourSquareTokenStore.get().getToken() == null) return null;
 		

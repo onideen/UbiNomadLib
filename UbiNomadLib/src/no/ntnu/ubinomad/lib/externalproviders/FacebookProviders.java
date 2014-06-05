@@ -51,8 +51,6 @@ public class FacebookProviders implements ExternalProvider {
 	@Override
 	public void getNearPlaces(Location location, int radius, final ExternalDataListener dataListener) {
 		
-		
-		
 		final Session session = Session.getActiveSession();
 		if (session != null & session.isOpened()) {
 			
@@ -75,7 +73,7 @@ public class FacebookProviders implements ExternalProvider {
 	}
 
 	@Override
-	public RawPlace getFromId(String id) {
+	public RawPlace getPlaceFromReference(String id) {
 		final Session session = Session.getActiveSession();
 		if (session != null & session.isOpened()) {
 			

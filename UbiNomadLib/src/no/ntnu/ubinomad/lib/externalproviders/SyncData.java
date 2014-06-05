@@ -6,6 +6,7 @@ import android.content.Context;
 import android.util.Log;
 import android.widget.Toast;
 import no.ntnu.ubinomad.lib.Provider;
+import no.ntnu.ubinomad.lib.helpers.PlaceHelper;
 import no.ntnu.ubinomad.lib.interfaces.ExternalProvider;
 import no.ntnu.ubinomad.lib.interfaces.Place;
 import no.ntnu.ubinomad.lib.interfaces.RawPlace;
@@ -40,14 +41,9 @@ public class SyncData {
 
 			for (RawPlace localPlace : rawPlaces) {
 				
-				if (localPlace.getProvider() == Provider.UBINOMAD) continue;
-
-				ExternalProvider externalProvider = ProviderRegister.getInstance().getExternalProvider(localPlace.getProvider());
-				
-				RawPlace externalPlace = externalProvider.getFromId(localPlace.getRawReference());
+				RawPlace externalPlace = PlaceHelper.getSingleRawPlace(localPlace.getProvider(), localPlace.getRawReference());
 				
 				Log.i(TAG, localPlace.getName());
-			
 				
 				if (externalPlace != null){
 					Log.i(TAG, String.format("The local place [%s] is equals to the external place [%s] : %b", localPlace.getName(), externalPlace.getName(), localPlace.equals(externalPlace) ));

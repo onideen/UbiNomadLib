@@ -13,7 +13,7 @@ public interface ExternalProvider {
 	static final String TAG = "ExternalProvider";
 	
 	public void getNearPlaces(Location location, int radius, ExternalDataListener dataListener);
-	public RawPlace getFromId(String id);
+	public RawPlace getPlaceFromReference(String id);
 	public ProviderConnector getConnector();
 	
 	/**

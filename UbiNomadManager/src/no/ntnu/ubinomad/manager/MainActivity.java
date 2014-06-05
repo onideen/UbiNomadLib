@@ -6,6 +6,7 @@ import no.ntnu.ubinomad.lib.Provider;
 import no.ntnu.ubinomad.lib.activities.UbiNomadFragmentActivity;
 import no.ntnu.ubinomad.lib.externalproviders.*;
 import no.ntnu.ubinomad.lib.fragments.LoginFragment;
+import no.ntnu.ubinomad.lib.helpers.CheckinHelper;
 import no.ntnu.ubinomad.lib.interfaces.AggregatorPlace;
 import no.ntnu.ubinomad.lib.interfaces.Place;
 import no.ntnu.ubinomad.lib.interfaces.RawPlace;
@@ -237,10 +238,8 @@ public class MainActivity extends UbiNomadFragmentActivity {
 		((AbstractBaseModel<AggregatorPlace>) place).setContext(this);
 		((AbstractBaseModel<AggregatorPlace>) place).save();
 
-		User user = User.getMe(this);
-		user.setCheckin(place);
+		CheckinHelper.checkIn(this, place);
 		
-		user.update();
 		Toast.makeText(this, "I checked in at " + place.getName(), Toast.LENGTH_LONG).show();
 
 	}

@@ -1,10 +1,18 @@
-UbiNomadLib
-===========
+UbiNomad Library
+================
 
 Middelware for location sharing on social networks
 
 
+
 ## Getting started
+
+### Prepare IDE
+This section will present a short tutorial on how to make Eclipse ready for UbiNomad Library
+
+#### Google Play Services
+
+1. Import an existing 
 
 [Work in progress]
 

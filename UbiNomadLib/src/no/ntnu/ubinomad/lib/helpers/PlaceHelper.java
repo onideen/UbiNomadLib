@@ -3,7 +3,9 @@ package no.ntnu.ubinomad.lib.helpers;
 import android.content.Context;
 import android.util.Log;
 import no.ntnu.ubinomad.lib.Provider;
+import no.ntnu.ubinomad.lib.externalproviders.ProviderRegister;
 import no.ntnu.ubinomad.lib.interfaces.AggregatorPlace;
+import no.ntnu.ubinomad.lib.interfaces.ExternalProvider;
 import no.ntnu.ubinomad.lib.interfaces.RawPlace;
 import no.ntnu.ubinomad.lib.models.AbstractBaseModel;
 
@@ -33,4 +35,19 @@ public class PlaceHelper {
 		return null;
 	}
 
+	
+	public static RawPlace getSingleRawPlace(Provider provider, String reference){
+		if (provider == Provider.UBINOMAD) return null;
+
+		ExternalProvider externalProvider = ProviderRegister.getInstance().getExternalProvider(provider);
+		
+		return externalProvider.getPlaceFromReference(reference);
+	}
+	
+	public static void mapPlaceToAggregatorPlace(Context context, RawPlace rawPlace, AggregatorPlace aggregator) {
+		rawPlace.setAggregatorPlace(aggregator);		
+		((AbstractBaseModel<RawPlace>)rawPlace).setContext(context);
+		((AbstractBaseModel<RawPlace>)rawPlace).save();
+		
+	}
 }

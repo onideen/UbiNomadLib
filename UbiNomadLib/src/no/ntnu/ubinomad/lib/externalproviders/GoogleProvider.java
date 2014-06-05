@@ -137,13 +137,12 @@ public class GoogleProvider implements ExternalProvider {
 		
 		if (!runningGoogle){
 			runningGoogle = true;
-			Log.d(TAG, "GET NEAR PLACES GOOGL");
 			new LoadPlaces().execute();
 		}
 	}
  
 	@Override
-	public RawPlace getFromId(String id) {
+	public RawPlace getPlaceFromReference(String id) {
 		GooglePlaceDetail googlePlaceDetail;
 		
 		try {
@@ -154,8 +153,6 @@ public class GoogleProvider implements ExternalProvider {
             request.getUrl().put("key", API_KEY);
             request.getUrl().put("reference", id);
             request.getUrl().put("sensor", true);
-
-//            Log.i(TAG, "URL: " + request.getUrl());
             
             googlePlaceDetail = request.execute().parseAs(GooglePlaceDetail.class);
             // Check log cat for places response status
@@ -169,7 +166,7 @@ public class GoogleProvider implements ExternalProvider {
         } catch (IOException e) {
 			Log.e(TAG, e.getMessage(), e);
 		}
-		
+			
 		return null;
 		
 	}
