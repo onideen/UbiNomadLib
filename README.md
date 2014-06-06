@@ -35,6 +35,9 @@ This section will present a short tutorial on how to make Eclipse ready for UbiN
 
 #### Errors
 If *UbiNomadLib* has a red x, it may be a build problem:
+
+![Play Services image](https://github.com/vegaen/UbiNomadLib/raw/master/screenshots/ProjectErrorX.png)
+
 1. Right-click on the project and press *Properties* 
 2. Go to *Android* tab
 3. If any library is marked with a red x, remove it and add it again.
