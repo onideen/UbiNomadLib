@@ -28,18 +28,20 @@ This section will present a short tutorial on how to make Eclipse ready for UbiN
 	- Other dependencies: UbiNomadLib, Facebook SDK, and foursquare-oauth-library 
 
 4. Make sure "Copy project into workspace" is **unchecked**
-   ![Play Services image](https://github.com/vegaen/UbiNomadLib/raw/master/screenshots/ImportLibraries.png)
+   ![Import project](https://github.com/vegaen/UbiNomadLib/raw/master/screenshots/ImportLibraries.png)
 
 5. Press finish
 5. Congratulation the IDE is ready
 
 #### Errors
-If *UbiNomadLib* has a red x, it may be a build problem:
+If *UbiNomadLib* is marked with a red x, it may be a build problem:
 
-![Play Services image](https://github.com/vegaen/UbiNomadLib/raw/master/screenshots/ProjectErrorX.png)
+![Project Error](https://github.com/vegaen/UbiNomadLib/raw/master/screenshots/ProjectErrorX.png)
 
 1. Right-click on the project and press *Properties* 
 2. Go to *Android* tab
+   ![Android Tab](https://github.com/vegaen/UbiNomadLib/raw/master/screenshots/AndroidTab.png)
+
 3. If any library is marked with a red x, remove it and add it again.
 4. There should be 3 libraries included marked with a green checkmark
 
