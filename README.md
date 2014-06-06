@@ -70,7 +70,7 @@ If you get the error message "2 versions of support-library" it can be fixed by:
 
 - Right-click the project and choose *Android Tools*->*Add Support Library...*
 
-   ![Android Tab](https://github.com/vegaen/UbiNomadLib/raw/master/screenshots/AddSupport.png)
+   ![Android Tab](https://github.com/vegaen/UbiNomadLib/raw/master/screenshots/AddSupportLibrary.png)
 
 
 ## Extend the library
