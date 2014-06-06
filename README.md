@@ -11,6 +11,7 @@ Middelware for location-based applications with social network integration
 
 1. Open Android SDK Manager
 2. Install *Extras* -> *Google Play Services*
+![Play Services image](screenshots/AndroidSDK.png =400x)
 
 
 ### Prepare IDE
