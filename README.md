@@ -88,8 +88,3 @@ There are two ways in which you are able to extend the library: You may add addi
 1. Create a new method in the *ExternalProvider* interface
 2. Implement the method in each existing Place Provider
 
-
-
-## Errors
-- 2 versions of support-library
-- solution right-click -> android tools -> add library
