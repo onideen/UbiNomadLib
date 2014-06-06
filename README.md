@@ -65,6 +65,13 @@ To have clean setup for a UbiNomad application, this section will go through the
 
 12. (Optional) To be able to use Foursquare, create an application on developers.foursquare.com. Add client_id and client_secret to the constructor when register an oauth key.
 
+### Errors
+If you get the error message "2 versions of support-library" it can be fixed by:
+
+- Right-click the project and choose *Android Tools*->*Add Support Library...*
+
+   ![Android Tab](https://github.com/vegaen/UbiNomadLib/raw/master/screenshots/AddSupport.png)
+
 
 ## Extend the library
 There are two ways in which you are able to extend the library: You may add additional place providers, or you may add functionality. This section will describe how to start.
