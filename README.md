@@ -54,6 +54,8 @@ To have clean setup for a UbiNomad application, this section will go through the
 2. Select root directory: *UbiNomadLib*/samples
 3. Import *HelloUbiNomad*, and set a name for your application
 4. **Check** the "Copy project into workspace" option
+   ![Import HelloUbiNomad](https://github.com/vegaen/UbiNomadLib/raw/master/screenshots/ImportHello.png)
+
 5. Press *Finish*
 6. A project with your chosen name should be visible in the project explorer. It will also be marked with a red x
 7. Right-click on the project and choose *Properties*
